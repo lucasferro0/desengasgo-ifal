@@ -11,8 +11,6 @@ body {
 }
 
 .content {
-  justify-content: center;
-  align-items: center;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 50px;
@@ -32,6 +30,7 @@ body {
 
 .icons {
   display: flex;
+  top: 0;
   justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
@@ -53,8 +52,6 @@ body {
 }
 
 .buttons button {
-  padding: 10px 20px;
-  background-color: #fff;
   border-radius: 8px;
   border-color: #12cee7;
   font-size: 16px;
@@ -78,8 +75,79 @@ body {
 
 .subtitle{
   font-family: cursive;
-  margin-top: 0px;
+  margin-top: -10px;
   font-size: 30px;
   color: #f1f1f1;
   text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+}
+
+@media only screen and (max-width: 600px){
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #36E7FF, #96F2FF);
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px; /* Reduzindo o padding para telas menores */
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(12, 12, 12, 0.671);
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .baby-img {
+    width: 50%; /* Ajustando a largura da imagem para ocupar 100% */
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px; /* Reduzindo a margem para telas menores */
+  }
+
+  .icons img {
+    width: 30px; /* Reduzindo o tamanho dos ícones para telas menores */
+    margin: 0 5px; /* Reduzindo a margem entre os ícones para telas menores */
+  }
+
+  .buttons {
+    flex-direction: column; /* Alterando a direção do layout para coluna em telas menores */
+    align-items: center; /* Centralizando os botões em telas menores */
+    margin-top: 10px; /* Reduzindo a margem para telas menores */
+  }
+
+  .buttons button {
+    width: 100%; /* Fazendo os botões ocuparem 100% da largura em telas menores */
+    margin: 10px 0; /* Adicionando margem superior e inferior entre os botões em telas menores */
+  }
+
+  .title,
+  h1,
+  .subtitle {
+    font-family: cursive;
+    color: #f1f1f1;
+    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+
+  .title,
+  h1 {
+    font-size: 40px; /* Reduzindo o tamanho da fonte para telas menores */
+  }
+
+  .subtitle {
+    font-size: 20px; /* Reduzindo o tamanho da fonte para telas menores */
+  }
 }
