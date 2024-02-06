@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Função para redirecionar para jogar.html
   const redirectJogar = function() {
-      window.location.href = "jogar.html";
+      window.location.href = "login.html";
   };
 
   // Função para redirecionar para idealizadores.html
@@ -26,9 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Adiciona os eventos de clique às constantes
   document.querySelector(".buttonJogar").addEventListener("click", redirectJogar);
-
   document.querySelector(".buttonIdealizadores").addEventListener("click", redirectIdealizadores);
   document.querySelector(".buttonOrientacoes").addEventListener("click", redirectOrientacoes);
-
 
 });
