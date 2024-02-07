@@ -60,9 +60,15 @@ body {
 
 .buttons {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin-top: 20px;
+}
 
+.buttons-secundary{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .buttons button {
