@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom right, #b1b3b3, #515859);
+  background: linear-gradient(to bottom right, #bed8d8, #aae1e9);
   background-repeat: no-repeat;
 
 }
@@ -16,8 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1240px;
-  height: 900px;
+  width: 1140px;
+  height: 800px;
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 30px;
@@ -27,19 +27,17 @@ body {
   box-shadow: 0px 0px 20px rgba(12, 12, 12, 0.671);
 }
 
+
 .fundo{
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.image{
-  display: flex;
-  justify-content: center;
-}
-
 .baby-img {
+  position: relative;
   width: 50%;
+
 }
 
 .icons {
@@ -56,6 +54,11 @@ body {
   align-items: center;
   width: 50px; /* Ajuste o tamanho dos ícones conforme necessário */
   margin: 0 10px;
+}
+
+.position-buttons{
+  position: relative;
+  top: -100px;
 }
 
 .buttons {
@@ -78,8 +81,17 @@ body {
   margin: 0 10px;
   cursor: pointer;
   width: 300px;
-  height: 50px;
+  height: 60px;
 }
+
+.botaoVoltar{
+  position: absolute;
+  top: 34px;
+  right: 50px;
+  width: 127px;
+
+}
+
 
 .buttons button:hover{
   background-color: #08007c;
@@ -99,14 +111,6 @@ body {
   font-size: 30px;
   color: #f1f1f1;
   text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
-}
-
-.botaoVoltar{
-  position: relative;
-  top: -280px;
-  right: 10px;
-  width: 129px;
-
 }
 
 .login-form {
