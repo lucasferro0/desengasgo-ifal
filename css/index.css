@@ -7,7 +7,7 @@ body {
     background-image: url("../img/background.png");
     background-position: center center;
     background-size: cover;
-    height:100vh;
+    height: 100vh;
     font-family: cursive, Arial, sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .buttons a {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ body {
         font-size: 14px;
     }
 
-    .title h1{
+    .title h1 {
         margin-bottom: 0px;
     }
 
@@ -108,7 +108,7 @@ body {
         height: 90%;
         margin: auto;
         border-radius: 8px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
     .icons {
@@ -129,7 +129,7 @@ body {
         height: 40px;
     }
 
-    .title h1{
+    .title h1 {
         margin-bottom: 0px;
         position: absolute;
         top: 0px;
@@ -137,8 +137,8 @@ body {
         font-size: 50px;
     }
 
-    .title h2{
-        margin-bottom: 0px; 
+    .title h2 {
+        margin-bottom: 0px;
         position: absolute;
         top: 90px;
         left: 70px;
@@ -194,7 +194,7 @@ body {
         height: 40px;
     }
 
-    .title h1{
+    .title h1 {
         margin-bottom: 0px;
         position: absolute;
         top: 0px;
@@ -202,7 +202,7 @@ body {
         font-size: 60px;
     }
 
-    .title h2{
+    .title h2 {
         margin-bottom: 0px;
         position: absolute;
         top: 130px;
@@ -258,7 +258,7 @@ body {
         margin: auto;
     }
 
-    .title h1{
+    .title h1 {
         margin-bottom: 0px;
         position: absolute;
         top: 0px;
@@ -266,7 +266,7 @@ body {
         font-size: 70px;
     }
 
-    .title h2{
+    .title h2 {
         margin-bottom: 0px;
         position: absolute;
         top: 130px;
@@ -326,7 +326,7 @@ body {
         height: 40px;
     }
 
-    .title h1{
+    .title h1 {
         margin-bottom: 0px;
         position: absolute;
         top: 0px;
@@ -334,7 +334,7 @@ body {
         font-size: 120px;
     }
 
-    .title h2{
+    .title h2 {
         margin-bottom: 0px;
         position: absolute;
         top: 200px;
