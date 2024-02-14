@@ -1,10 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const redirectVoltar = function() {
-    window.location.href = "index.html";
-  };
+document.addEventListener("DOMContentLoaded", function () {
 
-  const botaoVoltar = document.querySelector(".botaoVoltar");
+  const botaoVoltar = document.querySelector("button");
+
   if (botaoVoltar) {
-      botaoVoltar.addEventListener("click", redirectVoltar);
+    botaoVoltar.addEventListener("click", function () {
+      window.history.back();
+    });
   }
+  
 });
