@@ -104,6 +104,8 @@ body {
   }
 
   .caixa-input{
+    color: rgb(16, 16, 109);
+    padding-left: 10px;
     display: flex;
     margin: auto;
     width: 100%;
@@ -167,6 +169,7 @@ body {
   }
 
   .caixa-input{
+    font-size: 20px;
     width: 350px;
     height: 25px;
     border-radius: 20px;
@@ -191,6 +194,7 @@ body {
   }
 
   .caixa-input{
+    font-size: 25px;
     width: 400px;
     height: 30px;
     border-radius: 20px;
@@ -235,6 +239,7 @@ body {
   }
 
   .caixa-input{
+    font-size: 65px;
     width: 800px;
     height: 70px;
     border-radius: 20px;

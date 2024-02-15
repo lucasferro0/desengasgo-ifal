@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const redirectVoltar = function() {
-    window.location.href = "index.html";
-  };
+  const botaoVoltar = document.querySelector("button");
 
-  const botaoVoltar = document.querySelector(".botaoVoltar");
   if (botaoVoltar) {
-      botaoVoltar.addEventListener("click", redirectVoltar);
+    botaoVoltar.addEventListener("click", function () {
+      window.history.back();
+    });
   }
 
   const loginForm = document.querySelector('.login-form');
