@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/login.css">
   <script src="../js/login.js" defer></script>
 
   <title>Login</title>
@@ -11,17 +11,20 @@
 </head>
 <body>
 
-  <div class="content fundo">
-    <div class="buttons botaoVoltar">
+  <div class="content">
+    <div class="buttons">
       <button>Voltar</button>
     </div>
     <div class="content-login">
-      <h1>Login</h1>
-
+      <div class="title">
+        <h1>Login</h1>
+      </div>
       <form class="login-form">
-        <label class="username" for="username">Nome:</label>
-        <input type="text"  id="username" class="username" name="username" required>
-        <div class="buttons">
+        <div class="conteudo">
+          <label class="username" for="username">Nome:</label>
+          <input type="text"  id="username" class="caixa-input" name="username" required>
+        </div>
+        <div class="buttons entrar">
           <button type="submit">Entrar</button>
         </div>
       </form>
