@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem('username', username.trim()); // Removendo espaços em branco extras
 
       // Redirecionar para a próxima página ou executar a ação desejada
-      window.location.href = "jogar.html";
+      window.location.href = "tela1.html";
     });
   } else {
     console.error("Formulário de login não encontrado.");

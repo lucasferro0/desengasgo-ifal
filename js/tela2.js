@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const botaoVoltar = document.querySelector(".button-voltar");
   const botaoContinuar = document.querySelector(".button-vamos");
-  const botaoAjuda = document.querySelector(".button-nao-sei");
 
   if (botaoVoltar) {
     botaoVoltar.addEventListener("click", function () {
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (botaoContinuar) {
     botaoContinuar.addEventListener("click", function () {
-      window.location.href = "orientacoes.html";
+      window.location.href = "index.html";
     });
   }
 

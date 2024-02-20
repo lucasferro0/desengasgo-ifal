@@ -55,15 +55,15 @@ body {
 
 .content-msg{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  max-width: 30%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   background-color: rgb(255, 255, 255);
-  height: 50px;
-  border-radius: 8px 8px 0px 8px;
+  border-radius: 15px;
   box-shadow: 0px 0px 10px black;
 }
 
