@@ -29,6 +29,11 @@ body {
     cursor: pointer;
 }
 
+.buttons button:hover{
+    background-color: #0c515a;
+    color: white;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -304,4 +309,3 @@ body {
         font-size: 40px;
     }
 }
-
