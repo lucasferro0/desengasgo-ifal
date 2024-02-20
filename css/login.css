@@ -44,8 +44,7 @@ body {
 
   .content-login{
     margin: auto;
-    width: 80%;
-    padding-top: 15px;
+    padding: 50px;
     border-radius: 10px;
     background-color: #566c717d;
     display: flex;
