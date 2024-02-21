@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (contadorCliques === 5) {
         // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
         setTimeout(function() {
+          document.getElementById('somVitoria').play(); // Reproduz o som de vitória
           alert('Parabéns você completou o precedimento de tapotagem!');
         }, 500); // Tempo em milissegundos, ajuste conforme necessário
       }

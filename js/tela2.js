@@ -4,20 +4,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const botaoAjuda = document.querySelector(".button-nao-sei");
 
   if (botaoVoltar) {
-    botaoVoltar.addEventListener("click", function () {
-      window.history.back();
-    });
+      botaoVoltar.addEventListener("click", function () {
+          window.history.back();
+      });
   }
 
   if (botaoContinuar) {
-    botaoContinuar.addEventListener("click", function () {
-      window.location.href = "tela_escolha_equipamentos.html";
-    });
+      botaoContinuar.addEventListener("click", function () {
+          // Reproduz o som ao clicar no botão Continuar
+          var somContinuar = document.getElementById('somClick');
+          somContinuar.play();
+
+          // Redireciona para a próxima página
+          setTimeout(function() {
+            window.location.href = "tela_escolha_equipamentos.html";
+        }, 600);
+      });
   }
 
   if (botaoAjuda) {
-    botaoAjuda.addEventListener("click", function () {
-      window.location.href = "orientacoes.html";
-    });
+      botaoAjuda.addEventListener("click", function () {
+          window.location.href = "orientacoes.html";
+      });
   }
 });

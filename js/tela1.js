@@ -11,8 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (botaoContinuar) {
     botaoContinuar.addEventListener("click", function () {
-      window.location.href = "tela2.html";
-    });
+      // Reproduz o som ao clicar no botão Continuar
+      var somContinuar = document.getElementById('somClick');
+      somContinuar.play();
+
+      // Redireciona para a próxima página
+      setTimeout(function() {
+        window.location.href = "tela2.html";
+    }, 600);
+  });
   }
 
   if (botaoAjuda) {

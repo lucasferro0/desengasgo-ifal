@@ -61,31 +61,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     Object.keys(equipamentos).forEach(function (key) {
         var elementAndStatus = equipamentos[key];
-
         var element = elementAndStatus['element'];
 
-        /**
-         * Ações de selecionar um equipamento e desmarcar um já selecionado
-         */
-
+        // Ações de selecionar um equipamento e desmarcar um já selecionado
         element.addEventListener('click', function () {
-
             var status = equipamentos[key]['status'];
+
+            // Reproduz o som ao clicar em um item
+            var somCliqueItem = document.getElementById('somCliqueItem');
+            somCliqueItem.play();
 
             if (status) {
                 equipamentos[key]['status'] = false;
-
                 element.style.backgroundColor = '#fff';
-
-                return;
+            } else {
+                equipamentos[key]['status'] = true;
+                element.style.backgroundColor = '#C0C0C0';
             }
-
-            equipamentos[key]['status'] = true;
-
-            element.style.backgroundColor = '#C0C0C0';
         });
     });
-
 
     // Função para embaralhar os elementos de um array
     function shuffleArray(array) {
@@ -117,24 +111,34 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonSalvarBebe.addEventListener('click', function () {
         var equipamentosSelecionados = {};
 
+        // Itera sobre os equipamentos e verifica se pelo menos um está selecionado
+        var peloMenosUmSelecionado = false;
         Object.keys(equipamentos).forEach(function (key) {
             var status = equipamentos[key]['status'];
 
             if (status) {
                 equipamentosSelecionados[key] = equipamentos[key];
+                peloMenosUmSelecionado = true;
             }
         });
 
-        var hasMascaraMedica = equipamentosSelecionados['mascara_medica_img'] && equipamentosSelecionados['mascara_medica_img']['status'];
-        var hasLuvaMedica = equipamentosSelecionados['luva_medica_img'] && equipamentosSelecionados['luva_medica_img']['status'];
+        // Verifica se pelo menos um equipamento foi selecionado
+        if (peloMenosUmSelecionado) {
+            var hasMascaraMedica = equipamentosSelecionados['mascara_medica_img'] && equipamentosSelecionados['mascara_medica_img']['status'];
+            var hasLuvaMedica = equipamentosSelecionados['luva_medica_img'] && equipamentosSelecionados['luva_medica_img']['status'];
 
-        if (hasMascaraMedica && hasLuvaMedica && Object.keys(equipamentosSelecionados).length === 2) {
-            // Apenas passa para a tela de procedimento se tiver selecionado apenas a máscara médica e luva médica
-            window.location.href = "tela-procedimento.html";
-            window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o próximo procedimento!');
+            if (hasMascaraMedica && hasLuvaMedica && Object.keys(equipamentosSelecionados).length === 2) {
+                // Apenas passa para a tela de procedimento se tiver selecionado apenas a máscara médica e luva médica
+                window.location.href = "tela-procedimento.html";
+                document.getElementById('somVitoria').play(); // Reproduz o som de vitória
+                window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o próximo procedimento!');
+            } else {
+                window.location.href = "tela_derrota.html";
+                document.getElementById('somDerrota').play(); // Reproduz o som de vitória
+                window.alert('Infelizmente você não selecionou os itens corretos, veja as instruções da página de orientação e tente novamente!');
+            }
         } else {
-            window.location.href = "tela_derrota.html";
-            window.alert('Infelizmente você não selecionou os itens corretos, veja as instruções da página de orientação e tente novamente!');
+            window.alert('Selecione pelo menos um item antes de prosseguir.');
         }
     });
 
