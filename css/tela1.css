@@ -59,9 +59,8 @@ color: white;
 
   }
   .content-img img{
-    width: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 70%;
+    margin: auto;
   }
 
   .content-msg{
@@ -96,12 +95,6 @@ color: white;
     font-size: 16px;
   }
 
-  .content-img img{
-    width: 300px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
 }
 
 @media only screen and (min-width: 1024px){
@@ -119,11 +112,6 @@ color: white;
     font-size: 18px;
   }
 
-  .content-img img{
-    width: 350px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 }
 
 @media only screen and (min-width: 1440px){
@@ -140,12 +128,6 @@ color: white;
   .content-msg{
     font-size: 25px;
   }
-
-  .content-img img{
-    width: 450px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 }
 
 @media only screen and (min-width: 2560px){
@@ -157,15 +139,5 @@ color: white;
   .buttons button{
     font-size: 45px;
     margin: 50px;
-  }
-
-  .content-msg{
-    font-size: 45px;
-  }
-
-  .content-img img{
-    width: 700px;
-    margin-left: 100px;
-    margin-right: 100px;
   }
 }
