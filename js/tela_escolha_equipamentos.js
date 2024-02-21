@@ -120,9 +120,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         if (passesWithSucess) {
-            window.alert('GANHOUUUU');
+            window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o proximo procedimento!');
         } else {
-            window.alert('PERDEUUU');
+            window.alert('Infelizmente você não selecionou os itens corretos, Veja as instruções da pagina de orientação e tente novamente!');
         }
     });
 
