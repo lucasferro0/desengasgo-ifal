@@ -129,13 +129,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (hasMascaraMedica && hasLuvaMedica && Object.keys(equipamentosSelecionados).length === 2) {
                 // Apenas passa para a tela de procedimento se tiver selecionado apenas a máscara médica e luva médica
+               document.getElementById('somVitoria').play(); // Reproduz o som de vitória
+                // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
+                setTimeout(function() {
                 window.location.href = "tela-procedimento.html";
-                document.getElementById('somVitoria').play(); // Reproduz o som de vitória
-                window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o próximo procedimento!');
+                }, 3000); // Tempo em milissegundos, ajuste conforme necessário
+
             } else {
-                window.location.href = "tela_derrota.html";
                 document.getElementById('somDerrota').play(); // Reproduz o som de vitória
-                window.alert('Infelizmente você não selecionou os itens corretos, veja as instruções da página de orientação e tente novamente!');
+                 // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
+                 setTimeout(function() {
+                    window.location.href = "tela_derrota.html";
+                    }, 3000); // Tempo em milissegundos, ajuste conforme necessário
             }
         } else {
             window.alert('Selecione pelo menos um item antes de prosseguir.');

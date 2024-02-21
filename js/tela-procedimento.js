@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Verifica se atingiu 100% após a atualização da barra
       if (contadorCliques === 5) {
+        document.getElementById('somVitoria').play(); // Reproduz o som de vitória
         // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
         setTimeout(function() {
-          document.getElementById('somVitoria').play(); // Reproduz o som de vitória
-          alert('Parabéns você completou o precedimento de tapotagem!');
-        }, 500); // Tempo em milissegundos, ajuste conforme necessário
+          window.location.href = "tela_vitoria.html";
+        }, 3000); // Tempo em milissegundos, ajuste conforme necessário
       }
     }
   }
