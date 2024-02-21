@@ -59,7 +59,7 @@ body {
     padding-top: 15px;
     margin-top: 80px;
     border-radius: 10px;
-    background-color: #566c717d;
+    background-color: #E5FBFF;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -83,17 +83,17 @@ body {
   }
 
   .buttons a {
-    background-color: #E5FBFF;
     border-radius: 8px;
     padding: 5px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
     cursor: pointer;
+    text-decoration: none;
   }
 
   .baixar{
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 20px;
   }
 
   .title {
@@ -104,16 +104,15 @@ body {
   .title h1 {
     font-weight: bold;
     font-size: 30px;
-    color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+    color: #000d57f2;
   }
 
   .title p{
     font-weight: bold;
     margin: 10px;
     font-size: 14px;
-    color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+    color: #000d57f2;
+
   }
 }
 
@@ -154,7 +153,7 @@ body {
     background-color: #E5FBFF;
     border-radius: 8px;
     padding: 5px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 1);
     cursor: pointer;
     font-size: 20px;
   }
@@ -168,7 +167,6 @@ body {
   .title {
     text-align: center;
     color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
 
   .title h1 {
@@ -194,7 +192,9 @@ body {
 
   .buttons a {
     font-size: 30px;
+
   }
+
 
   .title h1 {
     font-weight: bold;

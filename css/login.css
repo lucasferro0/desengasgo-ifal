@@ -7,7 +7,6 @@
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,10 +15,12 @@ body {
   font-family: cursive, Arial, sans-serif;
 }
 
-.buttons {
+.buttons{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 5px;
 }
 
 .buttons button {
@@ -28,12 +29,13 @@ body {
   padding: 5px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
+  font-size: 14px;
+  }
 
-.buttons button:hover{
+  .buttons button:hover{
   background-color: #0c515a;
   color: white;
-}
+  }
 
 
 @media only screen and (min-width: 320px) {
@@ -49,14 +51,25 @@ body {
 
   .content-login{
     margin: auto;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
-    background-color: #566c717d;
+    background-color: #E5FBFF;
     display: flex;
     align-items: center;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+
+  .icons img {
+    width: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
 
   .conteudo{
     display: flex;
@@ -95,16 +108,16 @@ body {
   .title h1 {
     font-weight: bold;
     font-size: 30px;
-    color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+    color: #000d57f2;
+
   }
 
   .title p, .username{
     font-weight: bold;
     margin: 10px;
     font-size: 14px;
-    color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+    color: #000d57f2;
+
   }
 
   .caixa-input{
@@ -159,13 +172,16 @@ body {
 
   .title {
     text-align: center;
-    color: #fff;
-    text-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+    color: #000d57f2;
+
   }
 
   .title h1 {
     font-weight: bold;
     font-size: 40px;
+  }
+  .title p{
+    font-size: 20px;
   }
 
   .username{
@@ -193,6 +209,10 @@ body {
     font-size: 60px;
   }
 
+  .title p{
+    font-size: 20px;
+  }
+
   .username{
     font-size: 30px;
   }
@@ -204,6 +224,10 @@ body {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
+
+  .icons img {
+    width: 80px;
+}
 }
 
 
@@ -217,6 +241,10 @@ body {
     font-size: 62px;
   }
 
+  .title p{
+    font-size: 30px;
+  }
+
   .username{
     font-size: 32px;
   }
@@ -226,6 +254,9 @@ body {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
+  .icons img {
+    width: 90px;
+}
 }
 
 @media only screen and (min-width: 2560px) {
@@ -236,6 +267,10 @@ body {
   .title h1 {
     font-weight: bold;
     font-size: 100px;
+  }
+
+  .title p{
+    font-size: 70px;
   }
 
   .username{
@@ -249,4 +284,7 @@ body {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
+  .icons img {
+    width: 100px;
+}
 }
