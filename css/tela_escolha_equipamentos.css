@@ -92,6 +92,7 @@ button:hover {
     }
 
     .equipamentos .imagem_equipamento{
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -113,6 +114,11 @@ button:hover {
 
     .equipamentos img {
         width: 35px;
+    }
+
+    .close_img {
+        position: absolute;
+        display: none;
     }
 
     .footer {

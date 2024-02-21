@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const botaoVoltar = document.querySelector(".button-voltar");
   const botaoContinuar = document.querySelector(".button-vamos");
 
