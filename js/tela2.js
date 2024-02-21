@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (botaoContinuar) {
     botaoContinuar.addEventListener("click", function () {
-      window.location.href = "index.html";
+      window.location.href = "tela_escolha_equipamentos.html";
     });
   }
 
