@@ -87,6 +87,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+    // Função para embaralhar os elementos de um array
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    // Obtém todas as chaves (IDs) dos equipamentos
+    const equipamentoKeys = Object.keys(equipamentos);
+
+    // Embaralha as chaves aleatoriamente
+    shuffleArray(equipamentoKeys);
+
+    // Atribui os elementos embaralhados de volta aos IDs
+    equipamentoKeys.forEach(function (key, index) {
+        equipamentos[key]['element'].style.order = index + 1;
+    });
+
+
 
     /**
      * Clique do botão salvar bebê
@@ -105,26 +125,32 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        var passesWithSucess = true;
+        var hasMascaraMedica = equipamentosSelecionados['mascara_medica_img'] && equipamentosSelecionados['mascara_medica_img']['status'];
+        var hasLuvaMedica = equipamentosSelecionados['luva_medica_img'] && equipamentosSelecionados['luva_medica_img']['status'];
 
-        Object.keys(equipamentosSelecionados).forEach(function (key) {
-            var element = equipamentosSelecionados[key]['element'];
-
-            if (key != 'mascara_medica_img' && key != 'luva_medica_img') {
-                passesWithSucess = false;
-
-                var closeImgElement = element.querySelector(".close_img");
-
-                closeImgElement.style.display = 'inline'
-            }
-        });
-
-        if (passesWithSucess) {
-            window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o proximo procedimento!');
+        if (hasMascaraMedica && hasLuvaMedica && Object.keys(equipamentosSelecionados).length === 2) {
+            // Apenas passa para a tela de procedimento se tiver selecionado apenas a máscara médica e luva médica
+            window.location.href = "tela-procedimento.html";
+            window.alert('Parabéns, você selecionou os itens corretos, agora estamos preparados para fazer o próximo procedimento!');
         } else {
-            window.alert('Infelizmente você não selecionou os itens corretos, Veja as instruções da pagina de orientação e tente novamente!');
+            window.location.href = "tela_derrota.html";
+            window.alert('Infelizmente você não selecionou os itens corretos, veja as instruções da página de orientação e tente novamente!');
         }
     });
+
+
+    // Recupera o nome de login do Local Storage
+    var nomeLogin = localStorage.getItem("username");
+    console.log("Nome de login recuperado do Local Storage:", nomeLogin);
+
+    // Verifica se o nome de login foi armazenado
+    if (nomeLogin) {
+    // Define o nome de login no elemento HTML
+    document.getElementById("nomeUsuario").textContent = nomeLogin;
+    console.log("Nome de login definido no elemento HTML:", nomeLogin);
+    } else {
+    console.log("Nome de login não encontrado no Local Storage.");
+    }
 
 
 });

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/tela-procedimento.css">
+  <script src="../js/tela-procedimento.js" defer></script>
+  <title>Desengasgo Bebê</title>
+</head>
+<body>
+  <div class="buttons">
+    <button class="button-voltar" type="button">Voltar</button>
+  </div>
+  <div class="content">
+      <div class="content-msg">
+        <p>Agora, <strong><span id="nomeUsuario"></span></strong>, vamos realizar o procedimento de tapotagem!</p>
+      </div>
+      <div class="imagens">
+          <div class="content-img">
+            <img src="../img/enfermeira.png" id="personagem1" alt="Personagem 1">
+          </div>
+          <div class="content-img">
+            <img src="../img/baby.png" alt="baby">
+          </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="buttons">
+        <button class="button-vamos" type="button" onclick="realizarTapotagem()">Realizar tapotagem!</button>
+        <button class="button-nao-sei" type="button">Parar procedimento!</button>
+      </div>
+  </div>
+</body>
+</html>
