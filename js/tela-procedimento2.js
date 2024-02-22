@@ -10,9 +10,9 @@ var indiceMensagemAtual = 0;
 
 // Array de mensagens
 var mensagens = [
-  "Coloque o bebê em seu antebraço com a cabeça virada para baixo",
-  "Deixe o bebê em um ângulo direcionando sua cabeça para baixo para facilitar a exteriorização do corpo estranho.",
-  "Agora que ja colocamos o bebe na posição correta vamos realizara a tapotagem!."
+  "Precisamos fazer mais um procedimento",
+  "Agora com bebê sob o antebraço de barriga para cima",
+  "Pronto, agora que ja está na posição correta, podemos iniciar o procedimento."
   // Adicione quantas mensagens desejar
 ];
 
@@ -47,7 +47,7 @@ function finalizarTapotagem() {
     textoResultado.textContent = "Parabéns! Você realizou a tapotagem com sucesso, vamos para o proximo procedimento!";
     mensagemResultado.style.display = 'block';
     setTimeout(function() {
-      window.location.href = "tela-procedimento2.html";
+      window.location.href = "tela_vitoria.html";
     }, 3000);
   } else {
     document.getElementById('somDerrota').play();
