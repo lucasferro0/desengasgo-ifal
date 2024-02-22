@@ -16,6 +16,33 @@ body {
   font-family: cursive, Arial, sans-serif;
 }
 
+.coracao p{
+  font-size: 100px;
+  color: rgba(255, 0, 0, 0.836);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+
+  }
+  100% {
+    transform: scale(4);
+  }
+}
+
+
+.pulsating {
+  animation: pulse 1s infinite;
+}
+
+
 /* Adicione estes estilos para a barra de progresso */
 .progress-container {
   width: 50%;
@@ -164,7 +191,7 @@ color: white;
   }
 
   .content-img img{
-    width: 450px;
+    width: 350px;
     margin-left: 100px;
     margin-right: 100px;
   }

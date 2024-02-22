@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="../css/tela-procedimento.css">
   <script src="../js/tela-procedimento.js" defer></script>
   <title>Desengasgo Bebê</title>
-  <audio id="somVitoria" src="../audio/champion.mp3" preload="auto"></audio>
+  <audio id="somVitoria" src="../audio/sucesso.mp3" preload="auto"></audio>
+  <audio id="somDerrota" src="../audio/derrota.mp3" preload="auto"></audio>
 
 </head>
 <body>
@@ -15,7 +16,9 @@
   </div>
   <div class="content">
       <div class="content-msg">
-        <p>Agora, <strong><span id="nomeUsuario"></span></strong>, vamos realizar o procedimento de tapotagem!</p>
+        <div  class="balao-conversa">
+          <p id="mensagemBot"><strong><span id="nomeUsuario"></span></strong>, agora vamos realizar o primeiro procedimento de tapotagem!</p>
+      </div>
       </div>
       <div class="imagens">
           <div class="content-img">
@@ -25,12 +28,23 @@
             <img src="../img/baby.png" alt="baby">
           </div>
       </div>
-      <div class="progress-container">
+      <div id="contadorCliques">
+        Número de tapotagem: <span id="contador">0</span>
+      </div>
+      <div id="balaoConversa" class="coracao">
+        <p>&hearts;</p>
+      </div>
+      <div id="mensagemResultado" style="display: none;">
+        <p id="textoResultado"></p>
+      </div>
+      <!-- <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
-      </div>
+      </div> -->
       <div class="buttons">
-        <button class="button-vamos" type="button" onclick="realizarTapotagem()">Realizar tapotagem!</button>
+        <button id="botaoAvancar" class="button-vamos" type="button" onclick="avancarConversa()">Avançar</button>
+        <button id="botaoFinalizar" class="button-parar" type="button" style="display: none;" onclick="finalizarTapotagem()">Para Tapotagem</button>
       </div>
+
   </div>
 </body>
 </html>
