@@ -14,16 +14,15 @@
   </div>
   <div class="content">
       <div class="content-msg">
-        <p>Olá, <strong><span id="nomeUsuario"></span></strong>, meu nome é <strong>Vitória!</strong><br><br>
-          Estou com uma situação de atendimento de primeiros socorros que só você poderá me ajudar!<br><br>
-          Vamos me auxiliar a atender uma vítima de desengasgo?</p>
+        <p id="mensagemBot">Olá, <strong><span id="nomeUsuario"></span></strong>, meu nome é <strong>Vitória!</strong>
+        </p>
       </div>
       <div class="content-img">
         <img src="../img/enfermeira.png" id="personagem1" alt="Personagem 1">
       </div>
       <div class="buttons">
-        <button class="button-vamos" type="button">Vamos!</button>
-        <button class="button-nao-sei" type="button">Não sei o que fazer!</button>
+        <button class="button-vamos" onclick="avancarConversa()" type="button">Avançar!</button>
+        <button class="button-nao-sei" type="button" style="display: none;">Ajuda!</button>
       </div>
   </div>
 </body>

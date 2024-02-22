@@ -11,15 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (botaoContinuar) {
     botaoContinuar.addEventListener("click", function () {
-      // Reproduz o som ao clicar no botão Continuar
       var somContinuar = document.getElementById('somClick');
       somContinuar.play();
-
-      // Redireciona para a próxima página
-      setTimeout(function() {
-        window.location.href = "tela2.html";
-    }, 600);
-  });
+      avancarConversa(); // Chama a função para avançar a conversa
+    });
   }
 
   if (botaoAjuda) {
@@ -28,16 +23,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Recupera o nome de login do Local Storage
   var nomeLogin = localStorage.getItem("username");
   console.log("Nome de login recuperado do Local Storage:", nomeLogin);
 
-  // Verifica se o nome de login foi armazenado
   if (nomeLogin) {
-    // Define o nome de login no elemento HTML
     document.getElementById("nomeUsuario").textContent = nomeLogin;
     console.log("Nome de login definido no elemento HTML:", nomeLogin);
   } else {
     console.log("Nome de login não encontrado no Local Storage.");
+  }
+
+  var mensagens = [
+    "Estou com uma situação de atendimento de primeiros socorros que só você poderá me ajudar!",
+    "Caso esteja apto, clique em 'Vamos' ou se ainda estiver com dúvidas clique em 'Ajuda!'"
+  ];
+
+  var indiceMensagemAtual = 0;
+
+  function avancarConversa() {
+    var mensagemBot = document.getElementById('mensagemBot');
+    var botaoAvancar = document.querySelector('.button-vamos');
+
+    if (indiceMensagemAtual < mensagens.length) {
+      mensagemBot.textContent = mensagens[indiceMensagemAtual];
+      indiceMensagemAtual++;
+
+      if (indiceMensagemAtual === mensagens.length) {
+        botaoAvancar.textContent = "Vamos";
+        botaoAjuda.style.display = "inline"; // Torna o botão de ajuda visível
+        botaoAvancar.addEventListener("click", function() {
+          setTimeout(function() {
+            window.location.href = "tela2.html";
+          }, 2000);
+        });
+      }
+    }
   }
 });
