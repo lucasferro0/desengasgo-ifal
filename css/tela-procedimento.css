@@ -169,9 +169,7 @@ color: white;
   }
 
   .content-img img{
-    width: 350px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 320px;
   }
 }
 
@@ -182,7 +180,7 @@ color: white;
     }
 
   .buttons button{
-    font-size: 25px;
+    font-size: 20px;
     margin: 50px;
   }
 
@@ -191,9 +189,7 @@ color: white;
   }
 
   .content-img img{
-    width: 350px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 300px;
   }
 }
 
