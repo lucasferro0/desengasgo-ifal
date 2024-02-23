@@ -44,11 +44,10 @@ function finalizarTapotagem() {
   if (contadorCliques === 5) {
     document.getElementById('somVitoria').play();
     mensagemResultado.style.display = 'block'
-    textoResultado.textContent = "Parabéns! Você realizou a tapotagem com sucesso, vamos para o proximo procedimento!";
     mensagemResultado.style.display = 'block';
     setTimeout(function() {
       window.location.href = "tela_vitoria.html";
-    }, 3000);
+    }, 2000);
   } else {
     document.getElementById('somDerrota').play();
     textoResultado.textContent = "Ops! Parece que você não fez a quantidade correta de tapotagens. Por favor, tente novamente.";
