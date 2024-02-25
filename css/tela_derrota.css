@@ -83,3 +83,75 @@ a:hover {
         padding: 5px 15px;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 80vh;
+        width: 400px;
+    }
+
+    .imagem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin-bottom: 60px;
+    }
+
+    .imagem .baby_img {
+        width: 300px;
+    }
+
+    .imagem .close_img {
+        position: absolute;
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 80vh;
+        width: 600px;
+    }
+
+    .imagem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        margin-bottom: 60px;
+    }
+
+    .imagem .baby_img {
+        width: 600px;
+    }
+
+    .imagem .close_img {
+        position: absolute;
+        width: 300px;
+    }
+
+    .texto {
+        font-size: 30px;
+    }
+
+    .caixa_link a {
+        font-size: 30px;
+    }
+}
