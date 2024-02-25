@@ -4,11 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/tela-procedimento.css">
-  <script src="../js/tela-procedimento2.js" defer></script>
+  <script src="../js/tela-procedimento.js" defer></script>
   <title>Desengasgo Bebê</title>
-  <audio id="somVitoria" src="../audio/sucesso.mp3" preload="auto"></audio>
-  <audio id="somDerrota" src="../audio/derrota.mp3" preload="auto"></audio>
-
 </head>
 <body>
   <div class="buttons">
@@ -17,7 +14,7 @@
   <div class="content">
       <div class="content-msg">
         <div  class="balao-conversa">
-          <p id="mensagemBot"><strong><span id="nomeUsuario"></span></strong>, O bebe ainda continua engasgado!</p>
+          <p id="mensagemBot"><strong><span id="nomeUsuario"></span></strong>, agora vamos realizar o primeiro procedimento de tapotagem!</p>
       </div>
       </div>
       <div class="imagens">
@@ -25,7 +22,7 @@
             <img src="../img/enfermeira.png" id="personagem1" alt="Personagem 1">
           </div>
           <div class="content-img">
-            <img src="../img/bebe.png" alt="baby">
+            <img src="../img/baby.png" alt="baby">
           </div>
       </div>
       <div id="contadorCliques">
@@ -46,5 +43,8 @@
       </div>
 
   </div>
+  <audio id="som_vitoria" src="../audio/sucesso.mp3" preload="auto"></audio>
+  <audio id="som_derrota" src="../audio/derrota.mp3" preload="auto"></audio>
+  <audio id="som_pulse_heart" src="../audio/pulse_heart.wav" preload="auto"></audio>
 </body>
 </html>

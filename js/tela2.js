@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (botaoContinuar) {
       botaoContinuar.addEventListener("click", function () {
           // Reproduz o som ao clicar no botão Continuar
-          var somContinuar = document.getElementById('somClick');
+          var somContinuar = document.getElementById('som_click');
           somContinuar.play();
 
           // Redireciona para a próxima página

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var status = equipamentos[key]['status'];
 
             // Reproduz o som ao clicar em um item
-            var somCliqueItem = document.getElementById('somCliqueItem');
+            var somCliqueItem = document.getElementById('som_clique_item');
             somCliqueItem.play();
 
             if (status) {
@@ -129,14 +129,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (hasMascaraMedica && hasLuvaMedica && Object.keys(equipamentosSelecionados).length === 2) {
                 // Apenas passa para a tela de procedimento se tiver selecionado apenas a máscara médica e luva médica
-               document.getElementById('somVitoria').play(); // Reproduz o som de vitória
+               document.getElementById('som_vitoria').play(); // Reproduz o som de vitória
                 // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
                 setTimeout(function() {
-                window.location.href = "tela-procedimento.html";
+                window.location.href = "tela_procedimento.html";
                 }, 3000); // Tempo em milissegundos, ajuste conforme necessário
 
             } else {
-                document.getElementById('somDerrota').play(); // Reproduz o som de vitória
+                document.getElementById('som_derrota').play(); // Reproduz o som de vitória
                  // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
                  setTimeout(function() {
                     window.location.href = "tela_derrota.html";

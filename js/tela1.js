@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (botaoContinuar) {
     botaoContinuar.addEventListener("click", function () {
-      var somContinuar = document.getElementById('somClick');
+      var somContinuar = document.getElementById('som_click');
       somContinuar.play();
       avancarConversa(); // Chama a função para avançar a conversa
     });
