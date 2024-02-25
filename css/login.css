@@ -15,12 +15,11 @@ body {
   font-family: cursive, Arial, sans-serif;
 }
 
-.buttons{
+.buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  padding: 5px;
 }
 
 .buttons button {
@@ -30,12 +29,12 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-size: 14px;
-  }
+}
 
-  .buttons button:hover{
+.buttons button:hover {
   background-color: #0c515a;
   color: white;
-  }
+}
 
 
 @media only screen and (min-width: 320px) {
@@ -47,9 +46,9 @@ body {
     height: 100%;
     margin: auto;
     font-size: 10px;
-}
+  }
 
-  .content-login{
+  .content-login {
     margin: auto;
     padding: 30px;
     border-radius: 10px;
@@ -62,26 +61,23 @@ body {
 
   .icons img {
     width: 50px;
-}
+  }
 
-.icons {
+  .icons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 20px;
-}
+  }
 
-  .conteudo{
+  .conteudo {
     display: flex;
     flex-direction: row;
   }
 
   .buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 
   .buttons button {
@@ -93,7 +89,7 @@ body {
   }
 
 
-  .entrar{
+  .entrar {
     display: flex;
     flex-direction: column;
     margin: 40px;
@@ -112,7 +108,8 @@ body {
 
   }
 
-  .title p, .username{
+  .title p,
+  .username {
     font-weight: bold;
     margin: 10px;
     font-size: 14px;
@@ -120,7 +117,7 @@ body {
 
   }
 
-  .caixa-input{
+  .caixa-input {
     color: rgb(16, 16, 109);
     padding-left: 10px;
     display: flex;
@@ -142,7 +139,7 @@ body {
     font-size: 10px;
   }
 
-  .conteudo{
+  .conteudo {
     display: flex;
     flex-direction: row;
   }
@@ -151,8 +148,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 15px;
-    margin-top: 20px;
   }
 
   .buttons button {
@@ -164,7 +159,7 @@ body {
     font-size: 20px;
   }
 
-  .entrar{
+  .entrar {
     display: flex;
     flex-direction: column;
     margin: 40px;
@@ -180,15 +175,16 @@ body {
     font-weight: bold;
     font-size: 40px;
   }
-  .title p{
+
+  .title p {
     font-size: 20px;
   }
 
-  .username{
+  .username {
     font-size: 25px;
   }
 
-  .caixa-input{
+  .caixa-input {
     font-size: 20px;
     width: 350px;
     height: 25px;
@@ -201,23 +197,23 @@ body {
 @media only screen and (min-width: 1024px) {
 
   .buttons button {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .title h1 {
     font-weight: bold;
-    font-size: 60px;
-  }
-
-  .title p{
-    font-size: 20px;
-  }
-
-  .username{
     font-size: 30px;
   }
 
-  .caixa-input{
+  .title p {
+    font-size: 20px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .caixa-input {
     font-size: 25px;
     width: 400px;
     height: 30px;
@@ -227,64 +223,82 @@ body {
 
   .icons img {
     width: 80px;
-}
+  }
 }
 
 
 @media only screen and (min-width: 1440px) {
   .buttons button {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .title h1 {
     font-weight: bold;
-    font-size: 62px;
+    font-size: 50px;
   }
 
-  .title p{
+  .title p {
     font-size: 30px;
   }
 
-  .username{
+  .username {
     font-size: 32px;
   }
 
-  .caixa-input{
+  .caixa-input {
     height: 32px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
+
   .icons img {
     width: 90px;
-}
+  }
 }
 
 @media only screen and (min-width: 2560px) {
+  .content-login {
+    padding: 100px;
+  }
+
+  .buttons button {
+    margin-top: 40px;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
   .buttons button {
     font-size: 50px;
   }
 
   .title h1 {
     font-weight: bold;
-    font-size: 100px;
+    font-size: 80px;
   }
 
-  .title p{
-    font-size: 70px;
+  .title p {
+    margin-bottom: 90px;
+    font-size: 60px;
   }
 
-  .username{
-    font-size: 75px;
+  .username {
+    font-size: 60px;
   }
 
-  .caixa-input{
+  .caixa-input {
     font-size: 65px;
     width: 800px;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
   }
+
+  .icons {
+    margin-top: 120px
+  }
+
   .icons img {
     width: 100px;
-}
+  }
 }
