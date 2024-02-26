@@ -44,7 +44,7 @@ body {
     }
 
     .icons img {
-        width: 50px;
+        height: 90px
     }
 
     .icons {
@@ -284,9 +284,7 @@ body {
         font-size: 30px;
     }
 
-    .icons img {
-        width: 70px;
-    }
+
 
     .icons {
         display: flex;

@@ -147,8 +147,8 @@ color: white;
 
   .content-img img{
     width: 300px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
 
 }
@@ -169,7 +169,7 @@ color: white;
   }
 
   .content-img img{
-    width: 320px;
+    width: 250px;
   }
 }
 
@@ -189,7 +189,7 @@ color: white;
   }
 
   .content-img img{
-    width: 300px;
+    width: 250px;
   }
 }
 
@@ -209,7 +209,7 @@ color: white;
   }
 
   .content-img img{
-    width: 700px;
+    width: 600px;
     margin-left: 100px;
     margin-right: 100px;
   }

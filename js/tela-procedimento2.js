@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var mensagens = [
     "Precisamos fazer mais um procedimento",
     "Agora com bebê sob o antebraço de barriga para cima",
-    "Pronto, agora que ja está na posição correta, podemos iniciar o procedimento."
+    "Agora que ja está na posição correta, podemos iniciar o procedimento de compressão."
     // Adicione quantas mensagens desejar
   ];
 
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Trocar a mensagem do bot
     var mensagemBot = document.getElementById('mensagemBot');
     var botaoAvancar = document.getElementById('botaoAvancar');
+    var botaoFinalizar = document.getElementById('botaoFinalizar');
 
     if (indiceMensagemAtual < mensagens.length) {
       // Exibir próxima mensagem
@@ -28,8 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Verificar se é a última mensagem
       if (indiceMensagemAtual === mensagens.length) {
         // Se for a última mensagem, trocar o botão para "Realizar tapotagem"
-        botaoAvancar.textContent = "Realizar tapotagem";
+        botaoAvancar.textContent = "Realizar Compressão";
         botaoAvancar.setAttribute("onclick", "realizarTapotagem()");
+        botaoFinalizar.textContent = "Finalizar Compressão"
         document.getElementById('botaoFinalizar').style.display = 'inline-block'; // Mostra o botão Finalizar
       }
     }
