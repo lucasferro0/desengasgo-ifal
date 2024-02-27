@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 2000);
     } else {
       document.getElementById('som_derrota').play();
-      textoResultado.textContent = "Ops! Parece que você não fez a quantidade correta de tapotagens. Por favor, tente novamente.";
+      textoResultado.textContent = "Ops! Parece que você não fez a quantidade correta de compressão. Por favor, tente novamente.";
       mensagemResultado.style.display = 'block';
       setTimeout(function () {
         window.location.href = "tela_derrota.html";
