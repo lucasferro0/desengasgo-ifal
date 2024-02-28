@@ -29,6 +29,12 @@ a {
     background-color: #fff;
 }
 
+.caixa_texto_final {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
 a:hover {
     background-color: #0c515a;
     color: white;
@@ -53,16 +59,11 @@ a:hover {
         justify-content: center;
         align-items: center;
         width: 250px;
-        margin-bottom: 60px;
-    }
-
-    .imagem .baby_img {
-        width: 250px;
+        margin-bottom: 100px;
     }
 
     .imagem .close_img {
-        margin-top: 50px;
-        width: 120px;
+        width: 250px;
     }
 
     .texto {
@@ -80,6 +81,13 @@ a:hover {
     .caixa_link a {
         border-radius: 8px;
         padding: 5px 15px;
+    }
+
+    .caixa_texto_final {
+        width: 300px;
+        margin: auto;
+        padding: 4px;
+        text-align: center;
     }
 }
 
@@ -101,15 +109,19 @@ a:hover {
         justify-content: center;
         align-items: center;
         width: 300px;
-        margin-bottom: 60px;
-    }
-
-    .imagem .baby_img {
-        width: 300px;
+        margin-bottom: 180px;
     }
 
     .imagem .close_img {
-        width: 180px;
+        width: 300px;
+    }
+
+    .texto p, .caixa_link a, .caixa_texto_final p {
+        font-size: 20px;
+    }
+
+    .caixa_texto_final {
+        width: 400px;
     }
 }
 
@@ -131,20 +143,15 @@ a:hover {
         justify-content: center;
         align-items: center;
         width: 600px;
-        margin-bottom: 60px;
-    }
-
-    .imagem .baby_img {
-        width: 600px;
+        margin-bottom: 200px;
     }
 
     .imagem .close_img {
-        margin-top: 100px;
-        width: 300px;
+        width: 600px;
     }
 
-    .texto {
-        font-size: 30px;
+    .texto p {
+        font-size: 40px;
     }
 
     .caixa_link {
@@ -152,6 +159,15 @@ a:hover {
     }
 
     .caixa_link a {
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .caixa_texto_final {
+        margin-top: 5px;
+        width: 700px;
+    }
+
+    .caixa_texto_final p {
+        font-size: 40px;
     }
 }
