@@ -36,7 +36,7 @@ button:hover {
 
 @media only screen and (min-width: 320px) {
     .header {
-        height: 25px;
+        height: 40px;
     }
 
     .header button {
@@ -52,7 +52,9 @@ button:hover {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 80px;
     }
 
     .caixa_balao .balao {
