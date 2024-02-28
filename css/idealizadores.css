@@ -4,6 +4,10 @@
     border: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@ body {
     cursor: pointer;
 }
 
-.buttons button:hover{
+.buttons button:hover {
     background-color: #0c515a;
     color: white;
 }
@@ -81,6 +85,10 @@ body {
 }
 
 @media only screen and (min-width: 320px) {
+    .content {
+        height: 600px;
+    }
+
     .buttons {
         display: flex;
         flex-direction: row;
@@ -102,7 +110,7 @@ body {
     }
 
     .title h1 {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .card {
@@ -113,6 +121,10 @@ body {
     .card .legends {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .legends h2 {
+        font-size: 14px;
     }
 
     .row_member {
@@ -141,16 +153,21 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+    .content {
+        height: 200px;
+    }
+
     .row_member {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
+        height: 30px;
     }
 
     .row_member .details_member {
@@ -164,7 +181,7 @@ body {
     }
 
     .row_member .details_member p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -292,6 +309,7 @@ body {
         margin-right: 30px;
         margin-left: 30px;
         margin-bottom: 30px;
+        height: 130px;
     }
 
     .row_member img {
