@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         botaoAvancar.textContent = "Vamos";
         botaoAjuda.style.display = "inline"; // Torna o botão de ajuda visível
         botaoAvancar.addEventListener("click", function() {
-          setTimeout(function() {
-            window.location.href = "tela2.html";
-          }, 2000);
+          var somContinuar = document.getElementById('som_click');
+          somContinuar.play();
+          window.location.href = "tela2.html";
         });
       }
     }
