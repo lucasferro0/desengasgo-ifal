@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/etapa-3.css">
+    <title>Desengasgo - Salvando vidas</title>
+</head>
+<body>
+    <button id="botao-sair" onclick="sair()">SAIR</button>
+    <h1>Realizar tapotagens no bebê</h1>
+    <h2>Identifique o local e pressione a quantidade de vezes indicada nas orientações</h2>
+    <img id="tapotagem-movimento-1" src="../img/tapotagem_movimento_1.png" alt="" usemap="#area-tapotagem">
+    <map name="area-tapotagem">
+        <area shape="rect" coords="409,400,434,424" href="#" alt="" onclick="alternarImagens()">
+    </map>
+    <img id="tapotagem-movimento-2" src="../img/tapotagem_movimento_2.png" alt="">
+    <h3 id="tapotagens-realizadas">0</h3>
+    <button id="botao-avancar" onclick="verificarResposta()">AVANÇAR</button>
+    <script src="../js/etapa-3.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script>imageMapResize()</script>
+</body>
+</html>
