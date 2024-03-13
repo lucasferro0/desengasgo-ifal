@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
                document.getElementById('som_vitoria').play(); // Reproduz o som de vitória
                 // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
                 setTimeout(function() {
-                window.location.href = "tela_procedimento.html";
+                window.location.href = "etapa-1.html";
                 }, 3000); // Tempo em milissegundos, ajuste conforme necessário
 
             } else {
