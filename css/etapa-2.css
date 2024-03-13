@@ -9,17 +9,29 @@ body {
     align-items: center;
     justify-items: center;
     text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/background.png");
+    background-position: center center;
+    background-size: cover;
 }
 
-h1 {
+body > h1 {
     grid-row: 2/3;
     font-size: 3vh;
+    background-color: white;
+    width: 50vh;
+    font-weight: 600;
+    border-radius: 0.5rem;
 }
 
 h2 {
     grid-row: 3/4;
     margin: 2vh;
     font-size: 2vh;
+    background-color: white;
+    font-weight: 500;
+    width: 50vh;
+    border-radius: 0.5rem;
 }
 
 img {
