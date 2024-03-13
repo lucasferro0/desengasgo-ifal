@@ -1,0 +1,12 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/views"
+      },
+      {
+        "source": "/idealizadores.html",
+        "destination": "/views/idealizadores.html"
+      }
+    ]
+  }
