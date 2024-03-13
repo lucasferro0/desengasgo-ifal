@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           somContinuar.play();
 
           // Redireciona para a próxima página
-          setTimeout(function() {
-            window.location.href = "tela_escolha_equipamentos.html";
-        }, 600);
+          window.location.href = "tela_escolha_equipamentos.html";;
       });
   }
 
