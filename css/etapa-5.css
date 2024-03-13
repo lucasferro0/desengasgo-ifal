@@ -64,3 +64,36 @@ h3 {
     width: 15vh;
     font-size: clamp(1vh, 1.5vh, 2vh);
 }
+
+dialog> h1{ 
+    color: white;
+    font-size: 5vh;
+ }
+
+#alerta-acerto {
+    background-color: #47CA6C;
+    border: none;
+    border-radius: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#alerta-acerto::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#alerta-erro { 
+    background-color: #CA4747;
+    border: none;
+    border-radius: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#alerta-erro::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}

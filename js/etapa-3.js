@@ -41,11 +41,18 @@ function redirecionarPagina(){
 }
 
 function verificarResposta(){
+    const alertaAcerto = document.getElementById("alerta-acerto")
+    const alertaErro = document.getElementById("alerta-erro")
     if(contadorTapotagens === numeroTapotagensCorreto){
-        alert("Correto!")
-        redirecionarPagina()
+        alertaAcerto.showModal()
+        setTimeout(function(){
+            redirecionarPagina()
+        }, 1000)
     } else {
-      alert("Errado!")
+        alertaErro.showModal()
+        setTimeout(function(){
+            alertaErro.close()
+        }, 1000)
       reiniciarContador()
       contarErro()  
     }
