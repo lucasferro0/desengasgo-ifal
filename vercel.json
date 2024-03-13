@@ -5,8 +5,40 @@
         "destination": "/views"
       },
       {
+        "source": "/orientacoes.html",
+        "destination": "/views/orientacoes.html"
+      },
+      {
         "source": "/idealizadores.html",
         "destination": "/views/idealizadores.html"
+      },
+      {
+        "source": "/login.html",
+        "destination": "/views/login.html"
+      },
+      {
+        "source": "/tela_derrota.html",
+        "destination": "/views/tela_derrota.html"
+      },
+      {
+        "source": "/tela_escolha_equipamentos.html",
+        "destination": "/views/tela_escolha_equipamentos.html"
+      },
+      {
+        "source": "/tela_procedimento.html",
+        "destination": "/views/tela_procedimento.html"
+      },
+      {
+        "source": "/tela_procedimento2.html",
+        "destination": "/views/tela_procedimento2.html"
+      },
+      {
+        "source": "/tela_vitoria.html",
+        "destination": "/views/tela_vitoria.html"
+      },
+      {
+        "source": "/tela2.html",
+        "destination": "/views/tela2.html"
       }
     ]
   }
