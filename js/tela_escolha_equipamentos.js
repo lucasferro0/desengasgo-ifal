@@ -133,14 +133,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
                 setTimeout(function() {
                 window.location.href = "etapa-1.html";
-                }, 3000); // Tempo em milissegundos, ajuste conforme necessário
+                }, 2000); // Tempo em milissegundos, ajuste conforme necessário
 
             } else {
                 document.getElementById('som_derrota').play(); // Reproduz o som de vitória
                  // Adiciona um pequeno atraso usando setTimeout antes de exibir o alerta
                  setTimeout(function() {
                     window.location.href = "tela_derrota.html";
-                    }, 3000); // Tempo em milissegundos, ajuste conforme necessário
+                    }, 2000); // Tempo em milissegundos, ajuste conforme necessário
             }
         } else {
             window.alert('Selecione pelo menos um item antes de prosseguir.');
