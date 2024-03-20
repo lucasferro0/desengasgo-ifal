@@ -44,11 +44,12 @@ function sair(){
 }
 
 function redirecionarPagina(){
-    if (errosCometidos != 0){
-        window.localStorage.removeItem("errosCometidos")
-        window.location.href = paginaDerrota
-    } else {
+    if (contadorCompressoes == 5){
+        reiniciarContador();
         window.location.href = paginaVitoria
+    } else {
+        reiniciarContador();
+        window.location.href = paginaDerrota
     }
 }
 
@@ -62,10 +63,11 @@ function verificarResposta(){
         }, 1000)
     } else {
         alertaErro.showModal()
-        setTimeout(function(){
-            alertaErro.close()
-        }, 1000)
-        reiniciarContador()
-        contarErro()
+        document.getElementById('som_derrota').play();
+        reiniciarContador();
+        setTimeout(function () {
+            window.location.href = "tela_derrota.html";
+        }, 2500);
+        
     }
 }

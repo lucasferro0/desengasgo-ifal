@@ -37,9 +37,9 @@ function verificarResposta() {
         }, 1000)
     } else {
         alertaErro.showModal()
+        document.getElementById('som_derrota').play();
         setTimeout(function(){
-            alertaErro.close()
-        }, 1000)
-        contarErro()
+            alertaErro.close();
+        }, 2500)
     }
 }

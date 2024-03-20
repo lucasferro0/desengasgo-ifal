@@ -6,3 +6,5 @@ document.getElementById("nomeUsuario").textContent = nomeUsuario
 function redirecionarTelaInicial(){
     window.location.href = telaInicial
 }
+
+document.querySelector('#audio').play();
