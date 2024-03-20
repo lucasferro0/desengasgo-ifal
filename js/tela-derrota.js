@@ -1,4 +1,4 @@
-const telaInicial = "../views/etapa-1.html"
+const telaInicial = "../views/index.html"
 const nomeUsuario = localStorage.getItem("username");
 
 document.getElementById("nomeUsuario").textContent = nomeUsuario;

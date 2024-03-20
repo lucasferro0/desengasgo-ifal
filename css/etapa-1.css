@@ -48,7 +48,7 @@ h2 {
 
 img {
     grid-row: 4/5;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 #botao-sair {

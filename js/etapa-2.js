@@ -40,7 +40,7 @@ function verificarResposta() {
     } else {
         alertaErro.showModal()
         setTimeout(function(){
-            alertaErro.close()
+            window.location.href = "tela_derrota.html";
         }, 1000)
         contarErro()
     }

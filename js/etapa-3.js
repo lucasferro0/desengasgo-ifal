@@ -51,7 +51,11 @@ function verificarResposta(){
     } else {
         alertaErro.showModal()
         setTimeout(function(){
-            alertaErro.close()
+            document.getElementById('som_derrota').play();
+            textoResultado.textContent = "Ops! Parece que você não fez a quantidade correta de tapotagens. Por favor, tente novamente.";
+            setTimeout(function () {
+                window.location.href = "tela_derrota.html";
+              }, 2000);
         }, 1000)
       reiniciarContador()
       contarErro()  
