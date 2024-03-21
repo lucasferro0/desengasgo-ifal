@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var mensagens = [
     "Coloque o bebê em seu antebraço com a cabeça virada para baixo",
     "Deixe o bebê em um ângulo direcionando sua cabeça para baixo para facilitar a exteriorização do corpo estranho.",
-    "Agora que ja colocamos o bebe na posição correta vamos realizara a tapotagem!."
+    "Agora que colocamos o bebê na posição correta vamos realizara a tapotagem!."
     // Adicione quantas mensagens desejar
   ];
 

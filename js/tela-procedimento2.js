@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var mensagens = [
     "Precisamos fazer mais um procedimento",
     "Agora com bebê sob o antebraço de barriga para cima",
-    "Agora que ja está na posição correta, podemos iniciar o procedimento de compressão."
+    "Agora que está na posição correta, podemos iniciar o procedimento de compressão."
     // Adicione quantas mensagens desejar
   ];
 
